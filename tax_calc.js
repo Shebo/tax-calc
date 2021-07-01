@@ -2,14 +2,14 @@ class YearlyTaxCalculator {
 
     socialInsurancePercentStepsByWorkerType = {
 
-        // 2.87% of 60% of the avarage wage, and 12.83% of the rest until the maximum insured wage
+        // 2.87% of 60% of the average wage, and 12.83% of the rest until the maximum insured wage
         selfEmployed: [0.0287, 0.1283],
 
-        // 0.4% of 60% of the avarage wage, and 7% of the rest until the maximum insured wage
+        // 0.4% of 60% of the average wage, and 7% of the rest until the maximum insured wage
         hired: [0.004, 0.07],
     };
 
-    // 3.1% of 60% of the avarage wage, and 5% of the rest until the maximum insured wage
+    // 3.1% of 60% of the average wage, and 5% of the rest until the maximum insured wage
     healthInsurancePercentSteps = [0.031, 0.05];
 
     // 10%, 14%, 20%, 31%, 35%, 47%, 50%
@@ -17,10 +17,10 @@ class YearlyTaxCalculator {
 
     pensionPercentStepsByWorkerType = {
 
-        // 4.45% from 50% of the avarage wage, and 12.55% for the rest to the maximum of the avarage wage
+        // 4.45% from 50% of the average wage, and 12.55% for the rest to the maximum of the average wage
         selfEmployed: [0.0445, 0.1255],
 
-        // 6% from 100% of the avarage wage
+        // 6% from 100% of the average wage
         hired: [0.06],
     };
 
@@ -33,7 +33,7 @@ class YearlyTaxCalculator {
         this.timePeriod      = timePeriod;
         this.workerType      = workerType;
 
-        this.monthlyAvarageWage        = baseData.monthlyAvarageWage;
+        this.monthlyAverageWage        = baseData.monthlyAverageWage;
         this.monthlyMaxInsuredWage     = baseData.monthlyMaxInsuredWage;
         this.monthlyMinimumWage        = baseData.monthlyMinimumWage;
         this.incomeTaxMaxAmountSteps   = baseData.incomeTaxMaxAmountSteps;
@@ -51,15 +51,15 @@ class YearlyTaxCalculator {
     }
 
     set60PercentOfMonthlyAvgWage(){
-        this.sixtyPercentMonthlyAvgWage = Math.round(this.monthlyAvarageWage * 0.6);
+        this.sixtyPercentMonthlyAvgWage = Math.round(this.monthlyAverageWage * 0.6);
     }
 
     setHalfOfMonthlyAvgWage(){
-        this.halfMonthlyAvgWage = this.monthlyAvarageWage / 2;
+        this.halfMonthlyAvgWage = this.monthlyAverageWage / 2;
     }
 
     // setYearlyAvgWage(){
-    //     this.yearlyAvgWage = this.monthlyAvarageWage * 12;
+    //     this.yearlyAvgWage = this.monthlyAverageWage * 12;
     // }
 
     // setHalfOfYearlyAvgWage(){
@@ -149,7 +149,7 @@ class YearlyTaxCalculator {
 
             let currentStep = {
                 percentage: pensionPercentSteps[i],
-                maxSum: (i > 0 || pensionPercentSteps.length == 1) ? this.monthlyAvarageWage : this.halfMonthlyAvgWage
+                maxSum: (i > 0 || pensionPercentSteps.length == 1) ? this.monthlyAverageWage : this.halfMonthlyAvgWage
             };
 
             if(i > 0){
