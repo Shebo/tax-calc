@@ -1,0 +1,45 @@
+{
+    "2017": {
+        "monthlyAvarageWage": 9673,
+        "monthlyAvarageWageClause1": 9543,
+        "monthlyMaxInsuredWage": 43240,
+        "minimumWage": 5000,
+        "incomeTaxMaxAmountSteps": [74640, 107040, 171840, 238800, 496920, 640000],
+        "yearlyAllowancePointWorth": 2580
+    },
+    "2018": {
+        "monthlyAvarageWage": 9906,
+        "monthlyAvarageWageClause1": 9802,
+        "monthlyMaxInsuredWage": 43370,
+        "minimumWage": 5300,
+        "incomeTaxMaxAmountSteps": [74880, 107400, 172320, 239520, 498360, 641880],
+        "yearlyAllowancePointWorth": 2592
+    },
+    "2019": {
+        "monthlyAvarageWage": 10273,
+        "monthlyAvarageWageClause1": 10139,
+        "monthlyMaxInsuredWage": 43890,
+        "monthlyMinimumWage": 5300,
+        "incomeTaxMaxAmountSteps": [75720, 108600, 174360, 242400, 504360, 649560],
+        "yearlyAllowancePointWorth": 2616
+    },
+    "2020": {
+        "monthlyAvarageWage": 10551,
+        "monthlyAvarageWageClause1": 10428,
+        "monthlyMaxInsuredWage": 44020,
+        "minimumWage": 5300,
+        "incomeTaxMaxAmountSteps": [75960, 108960, 174960, 243120, 505920, 651600],
+        "yearlyAllowancePointWorth": 2628
+    },
+    "2021": {
+        "monthlyAvarageWage": 10551,
+        "monthlyAvarageWageClause1": 10428,
+        "monthlyMaxInsuredWage": 44020,
+        "minimumWage": 5300,
+        "incomeTaxMaxAmountSteps": [75480, 108360, 173880, 241680, 502920, 647640],
+        "yearlyAllowancePointWorth": 2616
+    }
+}
+
+
+
